@@ -33,72 +33,71 @@ ha的mqtt自动发现有很多问题,可能会出现friendlyname丢失,无法识
 ```
 switch:
   - platform: mqtt
-    name: 'ztc1_1_MACMAC'
-    state_topic: 'device/ztc1/MACMAC/state'
-    command_topic: 'device/ztc1/MACMAC/set'
-    payload_on: '{"mac":"MACMAC","plug_0":{"on":1}}'
-    payload_off: '{"mac":"MACMAC","plug_0":{"on":0}}'
-    value_template: '{{ value_json.plug_0.on }}'
-    state_on: '1'
-    state_off: '0'    
+    name: "ztc1_1_MACMAC"
+    state_topic: "device/ztc1/MACMAC/state"
+    command_topic: "device/ztc1/MACMAC/set"
+    payload_on: "{\"mac\":\"MACMAC\",\"plug_0\":{\"on\":1}}"
+    payload_off: "{\"mac\":\"MACMAC\",\"plug_0\":{\"on\":0}}"
+    value_template: "{{ value_json.plug_0.on }}"
+    state_on: "1"
+    state_off: "0"
   - platform: mqtt
-    name: 'ztc1_2_MACMAC'
-    state_topic: 'device/ztc1/MACMAC/state'
-    command_topic: 'device/ztc1/MACMAC/set'
-    payload_on: '{"mac":"MACMAC","plug_1":{"on":1}}'
-    payload_off: '{"mac":"MACMAC","plug_1":{"on":0}}'
-    value_template: '{{ value_json.plug_1.on }}'
-    state_on: '1'
-    state_off: '0'
+    name: "ztc1_2_MACMAC"
+    state_topic: "device/ztc1/MACMAC/state"
+    command_topic: "device/ztc1/MACMAC/set"
+    payload_on: "{\"mac\":\"MACMAC\",\"plug_1\":{\"on\":1}}"
+    payload_off: "{\"mac\":\"MACMAC\",\"plug_1\":{\"on\":0}}"
+    value_template: "{{ value_json.plug_1.on }}"
+    state_on: "1"
+    state_off: "0"
   - platform: mqtt
-    name: 'ztc1_3_MACMAC'
-    state_topic: 'device/ztc1/MACMAC/state'
-    command_topic: 'device/ztc1/MACMAC/set'
-    payload_on: '{"mac":"MACMAC","plug_2":{"on":1}}'
-    payload_off: '{"mac":"MACMAC","plug_2":{"on":0}}'
-    value_template: '{{ value_json.plug_2.on }}'
-    state_on: '1'
-    state_off: '0'
+    name: "ztc1_3_MACMAC"
+    state_topic: "device/ztc1/MACMAC/state"
+    command_topic: "device/ztc1/MACMAC/set"
+    payload_on: "{\"mac\":\"MACMAC\",\"plug_2\":{\"on\":1}}"
+    payload_off: "{\"mac\":\"MACMAC\",\"plug_2\":{\"on\":0}}"
+    value_template: "{{ value_json.plug_2.on }}"
+    state_on: "1"
+    state_off: "0"
   - platform: mqtt
-    name: 'ztc1_4_MACMAC'
-    state_topic: 'device/ztc1/MACMAC/state'
-    command_topic: 'device/ztc1/MACMAC/set'
-    payload_on: '{"mac":"MACMAC","plug_3":{"on":1}}'
-    payload_off: '{"mac":"MACMAC","plug_3":{"on":0}}'
-    value_template: '{{ value_json.plug_3.on }}'
-    state_on: '1'
-    state_off: '0'
+    name: "ztc1_4_MACMAC"
+    state_topic: "device/ztc1/MACMAC/state"
+    command_topic: "device/ztc1/MACMAC/set"
+    payload_on: "{\"mac\":\"MACMAC\",\"plug_3\":{\"on\":1}}"
+    payload_off: "{\"mac\":\"MACMAC\",\"plug_3\":{\"on\":0}}"
+    value_template: "{{ value_json.plug_3.on }}"
+    state_on: "1"
+    state_off: "0"
   - platform: mqtt
-    name: 'ztc1_5_MACMAC'
-    state_topic: 'device/ztc1/MACMAC/state'
-    command_topic: 'device/ztc1/MACMAC/set'
-    payload_on: '{"mac":"MACMAC","plug_4":{"on":1}}'
-    payload_off: '{"mac":"MACMAC","plug_4":{"on":0}}'
-    value_template: '{{ value_json.plug_4.on }}'
-    state_on: '1'
-    state_off: '0'
+    name: "ztc1_5_MACMAC"
+    state_topic: "device/ztc1/MACMAC/state"
+    command_topic: "device/ztc1/MACMAC/set"
+    payload_on: "{\"mac\":\"MACMAC\",\"plug_4\":{\"on\":1}}"
+    payload_off: "{\"mac\":\"MACMAC\",\"plug_4\":{\"on\":0}}"
+    value_template: "{{ value_json.plug_4.on }}"
+    state_on: "1"
+    state_off: "0"
   - platform: mqtt
-    name: 'ztc1_6_MACMAC'
-    state_topic: 'device/ztc1/MACMAC/state'
-    command_topic: 'device/ztc1/MACMAC/set'
-    payload_on: '{"mac":"MACMAC","plug_5":{"on":1}}'
-    payload_off: '{"mac":"MACMAC","plug_5":{"on":0}}'
-    value_template: '{{ value_json.plug_5.on }}'
-    state_on: '1'
-    state_off: '0'
+    name: "ztc1_6_MACMAC"
+    state_topic: "device/ztc1/MACMAC/state"
+    command_topic: "device/ztc1/MACMAC/set"
+    payload_on: "{\"mac\":\"MACMAC\",\"plug_5\":{\"on\":1}}"
+    payload_off: "{\"mac\":\"MACMAC\",\"plug_5\":{\"on\":0}}"
+    value_template: "{{ value_json.plug_5.on }}"
+    state_on: "1"
+    state_off: "0"
 
-sensor:
   - platform: mqtt
-    name: 'ztc1_power_MACMAC'
-    state_topic: 'device/ztc1/MACMAC/sensor'
+    name: "ztc1_power_MACMAC"
+    state_topic: "device/ztc1/MACMAC/sensor"
     unit_of_measurement: 'W'
-    icon: 'mdi:gauge'
-    value_template: '{{ value_json.power }}'
+    icon: mdi:gauge
+    value_template: "{{ value_json.power }}"
   - platform: mqtt
-    name: 'ztc1_time_MACMAC'
-    state_topic: 'device/ztc1/MACMAC/sensor'
+    name: "ztc1_time_MACMAC"
+    state_topic: "device/ztc1/MACMAC/sensor"
     #unit_of_measurement: '秒'
-    icon: 'mdi:gauge'
+    icon: mdi:gauge
     #value_template: '{{ value_json.total_time }}'
     value_template: >-
       {% set time = value_json.total_time %}
